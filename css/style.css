@@ -15,8 +15,16 @@
     clear: both;
 }
 
+h1 {
+    padding: 2px, 0px, 0px, 2px;
+    font-family: Lato;
+    font-size: 45px;
+    color: white;
+    font-weight: 500;
+}
+
 body {
-    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(../images/back.jpg);
+    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(../images/pigs.png);
     background-size: cover;
     background-position: center;
     font-family: Lato;
