@@ -12,8 +12,8 @@ $(document).ready(function() {
     activePlayer = 0;
     roundScore = 0;
     gamePlaying = true;
-    document.querySelector(".dice").style.display = "none";
-    document.querySelector(".dice").style.display = "none";
+    document.getElementById("dice-1").style.display = "none";
+    document.getElementById("dice-2").style.display = "none";
     document.getElementById("score-0").textContent = "0";
     document.getElementById("score-1").textContent = "0";
     document.getElementById("current-0").textContent = "0";
@@ -59,7 +59,7 @@ $(document).ready(function() {
       document.getElementById("dice-1").style.display = "block";
       document.getElementById("dice-2").style.display = "block";
       document.getElementById("dice-1").src = "./images/dice-" + dice1 + ".png";
-      document.getElementById("dice-1").src = "./images/dice-" + dice2 + ".png";
+      document.getElementById("dice-2").src = "./images/dice-" + dice2 + ".png";
 
       if (dice1 !== 1 && dice2 !== 1) {
         roundScore += dice1 + dice2;
