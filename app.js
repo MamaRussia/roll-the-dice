@@ -2,9 +2,13 @@ $(document).ready(function() {
   let scores, roundScore, activePlayer, gamePlaying, diceRolled, x;
   startGame();
   x = document.getElementById("myAudio");
+  y = document.getElementById("diceRoll");
 
   function playAudio() {
     x.play();
+  }
+  function diceSound() {
+    y.play();
   }
 
   function startGame() {
@@ -53,6 +57,7 @@ $(document).ready(function() {
 
   document.querySelector(".btn-roll").addEventListener("click", function() {
     if (gamePlaying) {
+      diceSound();
       let dice1 = Math.floor(Math.random() * 6) + 1;
       let dice2 = Math.floor(Math.random() * 6) + 1;
 
@@ -62,6 +67,7 @@ $(document).ready(function() {
       document.getElementById("dice-2").src = "./images/dice-" + dice2 + ".png";
 
       if (dice1 !== 1 && dice2 !== 1) {
+       
         roundScore += dice1 + dice2;
         document.querySelector(
           "#current-" + activePlayer
