@@ -95,7 +95,7 @@ $(document).ready(function() {
 
       if (scores[activePlayer] >= winningScore) {
         playAudio();
-        document.querySelector("#name-" + activePlayer).textContent = "Winner!";
+        document.querySelector("#name-" + activePlayer).textContent = "Winner! Babe would be proud.";
         document.getElementById("dice-1").style.display = "none";
         document.getElementById("dice-2").style.display = "none";
         document
